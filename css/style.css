@@ -1,0 +1,124 @@
+/*
+ * Game of life
+ * styles
+ */
+    * {
+      margin: 0; padding: 0;
+    }
+    
+    body {
+      font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+      /*background: #ECFFBF;*/
+      background: #fff url("../gfx/bg.png") repeat-x top left;
+      color: #232F0F;
+      padding: 12px;
+      
+    }
+    
+    a {
+      color: #232F0F;
+    }
+    
+    a:hover {
+      color: #859F1D;
+    }
+    
+    #wrapper {
+      width: 50%;
+      margin: 0 auto;
+      padding: 10px;
+      
+      border: 1px solid #95AF57;
+    }
+    
+    h1 {
+      font-size: 1.8em;
+      letter-spacing: 2px;
+      color: #7F170F;
+      text-align: center;
+      
+      padding-bottom: 10px;
+      border-bottom: 1px solid #95AF57;
+    }
+    
+    blockquote {
+      margin: 4px;
+    }
+    
+    blockquote p {
+      font-size: 0.9em;
+      padding-bottom: 4px;
+    }
+    
+    #cite {
+      font-size: 0.56em;
+      text-align: right;
+    }
+    
+    #selector, #controls {
+      margin: 10px 0;
+      padding: 2px;
+    }
+    
+    fieldset {
+      width: 160px;
+      padding: 4px;
+      margin-right: 8px;
+      border: 1px solid #6F6F6F;
+      float: left;
+    }
+    
+    input, select {
+      margin: 2px;
+      padding: 0.2em;
+      border: 1px solid #ccc;
+      /*background: #fff;*/
+      
+       background: #fff url("../gfx/btn.png") repeat-x bottom left
+    }
+    
+    .button {
+     /* background: #fff url("../gfx/btn.png") repeat-x bottom left;*/
+    }
+    
+    #life {
+      border: 1px solid #ddd;
+      margin: 2px;
+    }
+    
+    td {
+      border: 0px solid #C0C0C0;
+      width: 20px;
+      height: 20px;
+    }
+    
+    .c_0 {
+      background: #fff;
+    }
+    
+    .c_1 {
+      background: #000;
+    }
+    
+    .clr {
+      clear: both;
+    }
+    
+    
+    #itable {
+      width: 99%; 
+    }
+    
+    
+    #footer {
+      font-size: 0.9em;
+      color: #95AF57;
+      border-top: 1px solid #95AF57;
+      margin-top: 20px;
+      text-align: center;
+    }
+    
+    #footer a {
+      color: inherit;
+    }
+    

@@ -1,0 +1,104 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<head>
+  <!-- kpp -->
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>Game of Life</title>
+  
+  <link rel="stylesheet" href="css/style.css" />
+  <!--[if IE]>
+	<link rel="stylesheet" type="text/css" href="css/style_ie.css">	
+	<![endif]-->
+  
+  <script src="js/sdt.js" type="text/javascript"></script>
+  <script src="js/patterns.js" type="text/javascript"></script>
+  <script src="js/area.js" type="text/javascript"></script>
+  <script src="js/game.js" type="text/javascript"></script>
+  <script src="js/table.js" type="text/javascript"></script>
+  <script src="js/scripting.js" type="text/javascript"></script>
+</head>
+<body>
+  <div id="wrapper">
+    <h1>Game of life</h1>
+    
+    <div id="info">
+      <blockquote cite="http://en.wikipedia.org/wiki/Conway%27s_Game_of_Life">
+        <p>
+          The Game of Life, is a cellular automaton devised by the British mathematician John Horton Conway in 1970. It is the best-known example of a cellular automaton.
+        </p>
+        <p>
+          The "game" is actually a zero-player game, meaning that its evolution is determined by its initial state, needing no input from human players. One interacts with the Game of Life by creating an initial configuration and observing how it evolves.  
+        </p>
+        
+        <p id="cite">Quotation from <a href="http://en.wikipedia.org/wiki/Conway%27s_Game_of_Life">Wikipedia</a>.</p>
+      </blockquote>
+    </div>
+    
+    <div id="selector">
+      <select id="pattern">
+        <option value="glider" selected="selected">Glider</option>
+        <option value="blinker">Blinker</option>
+        <option value="toad">Toad</option>
+        <option value="lwss">Lightweight spaceship</option>
+        <option value="mazing">Mazing</option>
+        <option value="turtle">Turtle</option>
+        <option value="ggg">Gosper's Glider Gun</option>
+      </select>
+      
+      <input id="refresh" value="Refresh" type="button" class="button" />
+      
+      <input id="clear" value="New" type="hidden" />
+      
+      <span id="desc"></span>
+    
+    </div>
+    
+    <div id="dlife">
+      <table id="life" border="0" cellspacing="0" cellpadding="0"><tr><td></td></tr></table>
+    </div>
+    
+    <div id="controls">
+      <fieldset><legend>Control</legend>
+        
+        <input id="next" value="Next generation" type="button" class="button" />
+        <br />
+        <input id="play" value=" &gt; " type="button" class="button" />
+        <select id="delay">
+          <option value="100">super fast</option>
+          <option value="300">fast</option>
+          <option value="600" selected="selected">medium</option>
+          <option value="1000">slow</option>
+        </select>
+      </fieldset>
+      
+      <fieldset><legend>Statistics</legend>
+        <table border="0" cellpadding="2" cellspacing="3" id="itable">
+          <thead>
+            <col />
+            <col />
+          </thead>
+          <tr>
+            <td>Generation</td><td align="right"><span id="igeneration"></span></td>
+          </tr>
+          <tr>
+            <td>Alive cells</td><td align="right"><span id="ialive"></span></td>
+          </tr>
+          <tr>
+            <td>JS time</td><td align="right"><span id="ijstime"></span></td>
+          </tr>
+        </table>
+        
+      </fieldset>
+      
+      <div class="clr"></div>
+    </div>
+    
+    <div id="help"></div>
+    
+    <div id="footer">written by <a href="http://kubarek.info">kubarek</a> in 2009. <a href="http://www.gnu.org/copyleft/gpl.html">GPL</a> licence</div>
+    
+  </div>
+  
+  
+</body>
+</html>

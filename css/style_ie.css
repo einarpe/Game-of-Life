@@ -1,0 +1,14 @@
+
+td {
+  /*
+  behavior:expression(
+    (this.runtimeStyle.behavior="none")&&
+    (/^data:.*;base64/i.test(this.src))&&
+    (this.src="/my/base64.php?"+this.src.slice(5))
+  );
+  */
+}
+
+tr {
+  display: table-row;
+}
